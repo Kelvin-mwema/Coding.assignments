@@ -1,0 +1,38 @@
+//program to calculate compound interest 
+/*
+program to calculate  compound interest 
+Author:CT101/G/24268/24
+*/
+#include <stdio.h>{
+#include <math.h>
+int main (){
+//preprocessor directive scanf (), printf ()
+//declaration and initialization  of variables
+double Principle ;
+double rate;
+double time;
+int n;
+double  CompoundInterest;
+double  Amount ;
+
+printf("Enter Principle: "); 
+scanf ("%lf",&Principle);
+
+printf("Enter rate: ");
+scanf ("%lf",&rate);
+
+printf ("Enter time: ");
+scanf ("%lf",&time);
+
+printf ("Enter number of times intrest  is compounded annualy: ");
+scanf("%d",&n);
+
+rate=rate/100;
+
+Amount =Principle*pow(( 1+rate/n),n*time);
+CompoundInterest =Amount-Principle;
+printf ("Amount= %.2lf\n",Amount);
+printf ("Compound  Interest= %.2lf",CompoundInterest);
+
+return 0;
+}
