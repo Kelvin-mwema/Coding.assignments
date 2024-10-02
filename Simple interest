@@ -1,0 +1,27 @@
+//program to find simple interest 
+/*
+program to find Simple interest 
+Author: CT101/G/24268/24
+*/
+// preprocessor directive scanf (), printf ()
+//declaration and initialization 
+#include <stdio.h>
+int main () {
+int principalAmount;
+float rate;
+int time;
+double SimpleInterest;
+
+printf ("Enter principal amount: ");
+scanf("%d",&principalAmount);
+
+printf ("Enter rate: ");
+scanf ("%f",&rate);
+
+printf ("Enter time (in years): ");
+scanf("%d",&time);
+
+SimpleInterest=principalAmount *rate*time/100;
+printf ("Simple  Interest = %.2lf",&SimpleInterest);
+return 0;
+}
