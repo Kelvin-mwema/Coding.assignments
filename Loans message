@@ -1,0 +1,26 @@
+//program to print message according to age and annual income
+/*
+program to print message according to age and annual income 
+Author CT101/G/24268/24
+*/
+//preprocessor directives scanf (),printf ()
+#include <stdio.h>
+int main(){
+// declaration and initialization 
+int age;
+int annual_income;
+
+printf("Enter your age: ",age);
+scanf("%d",&age);
+
+printf ("Enter your annual income: ",annual_income);
+scanf ("%d",&annual_income);
+
+if(annual_income>=21000,age>=21)
+printf("congratulations you qualify for this loan");
+
+if(21000>annual_income,age<21)
+printf("unfortunately we are unable to offer you the loan at this time"); 
+
+return 0;
+}
