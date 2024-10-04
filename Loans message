@@ -16,10 +16,10 @@ scanf("%d",&age);
 printf ("Enter your annual income: ",annual_income);
 scanf ("%d",&annual_income);
 
-if(annual_income>=21000,age>=21)
+if(annual_income>=21000 && age>=21)
 printf("congratulations you qualify for this loan");
 
-if(21000>annual_income,age<21)
+else
 printf("unfortunately we are unable to offer you the loan at this time"); 
 
 return 0;
