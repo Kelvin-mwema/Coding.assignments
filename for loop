@@ -1,0 +1,24 @@
+//for loop
+/*
+for loop
+Author CT101/G/24268/24
+date 7th October 2024
+*/
+#include <stdio.h>
+int main(){
+int i,start,stop,sum;
+printf("enter when to start: ");
+scanf("%d",&start);
+printf("enter when to stop: ");
+scanf("%d",&stop);
+i=start;
+sum=0;
+for(i=start;i<=stop;i++)
+{
+printf("%d\n",i);
+ sum=i+sum;
+}
+
+printf ("the sum is %d",sum);
+return 0;
+}
