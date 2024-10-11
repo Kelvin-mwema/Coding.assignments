@@ -1,0 +1,18 @@
+//while loop
+#include <stdio.h>
+int main(){
+int i,start,stop,sum=0;
+printf("enter value for when to start: ");
+scanf ("%d",&start);
+printf ("Enter  value for when to stop: ");
+scanf ("%d",&stop);
+i=start;
+while(i<=stop){
+printf("%d\n",i);
+ i++;
+ sum=+i;
+}
+
+printf ("the sum is %d",sum);
+return 0;
+}
