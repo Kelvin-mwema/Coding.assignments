@@ -1,0 +1,35 @@
+// c structures 
+/*
+structure to print Book information 
+Author: Kelvin Mwema 
+Registration number CT101/G/24268/24
+*/
+#include <stdio.h>
+#include <string.h>
+struct BookInfo{
+char title[30],author[30],ISBN[13];
+float price;
+int year_of_publication;
+};
+int main () {
+struct BookInfo  book;
+printf ("Enter Book Title: ");
+scanf ("%s",&book.title);
+printf ("Enter Name of the Author: ");
+scanf ("%s",&book.author);
+printf ("Enter ISBN: ");
+scanf ("%s",&book.ISBN);
+printf ("Enter year of publication: ");
+scanf ("%d",&book.year_of_publication);
+printf ("Enter price:  ");
+scanf ("%.2lf",&book.price);
+
+printf ("Title: %s\n",book.title);
+printf("Author: %s\n",book.author);
+printf ("Year of publication: %d\n",book.year_of_publication);
+printf ("ISBN: %s\n",book.ISBN);
+printf ("price: %.2lf",book.price);
+
+return 0;
+
+};
